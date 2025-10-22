@@ -45,3 +45,6 @@ button:hover,#form input[type ='submit']:hover  {
 
 }
 
+li {
+    cursor: pointer;
+}
