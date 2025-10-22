@@ -1,0 +1,47 @@
+body {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+button, #form input[type ='submit'] {
+  background-color: red;
+  padding: 20px 45px;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+button:hover,#form input[type ='submit']:hover  {
+    background-color: #262626;
+}
+
+#form {
+    width: 90%;
+    padding: 3%;
+    border: 1px solid #00000059;
+    border-radius: 10px;
+}
+#form label {
+    display: block;
+    margin: 10px 0;
+    text-align: left;
+}
+#form input, #form textarea {
+    width: 90%;
+    padding: 10px 4%;
+    border-radius: 10px;
+    border: 1px solid #00000059;
+    font-size: 14px;
+}
+#form textarea::placeholder, #form input::placeholder {
+    font-size: 14px;
+    color: red;
+}
+#form input[type ='submit'] {
+    width: 100%;
+    padding: 10px 4%;
+    margin-top: 10px;
+
+}
+
