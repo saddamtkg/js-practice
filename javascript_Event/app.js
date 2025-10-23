@@ -35,11 +35,13 @@ function checkFields() {
     document.getElementById("text").innerHTML = hasValue ? "Key Press" : "";
 }
 function windowResize() {
-    document.getElementById("textarea").style.height = "100px";
+    document.getElementById("textarea").style.height = "180px";
+    document.querySelector('#form input[type="text"]').style.backgroundColor = "#26262657";
 }
 
-function OnScroll() {
-    document.getElementById("text").innerHTML = "Scrolling";
+function OnLoad() {
+    alert("the a test");
+    document.getElementById("text").innerHTML = "Website Loaded Properly";
 }
 
 document.getElementById("btn").onclick = function () {

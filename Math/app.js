@@ -39,18 +39,18 @@ console.log(Math.ceil(Math.random()));
 let upperValue = 6;
 let lowerValue = 1;
 let resultValue = Math.ceil(
-  Math.random() * (upperValue - lowerValue) + lowerValue
+    Math.random() * (upperValue - lowerValue) + lowerValue
 );
 console.log(resultValue);
 
 function rollDice() {
-  // Generate a random number between 1 and 6
-  let randomNumber = Math.floor(Math.random() * 6) + 1;
+    // Generate a random number between 1 and 6
+    let randomNumber = Math.floor(Math.random() * 6) + 1;
 
-  // Update the image source based on the random number
-  let imageSource = 'img/' + randomNumber + '.png';
-  document.getElementById('ludo').src = imageSource;
-  console.log('Rolled Number: ', randomNumber);
+    // Update the image source based on the random number
+    let imageSource = "img/" + randomNumber + ".png";
+    document.getElementById("ludo").src = imageSource;
+    console.log("Rolled Number: ", randomNumber);
 }
 
 console.log(resultValue);

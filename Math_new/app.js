@@ -1,67 +1,52 @@
-//JavaScript here
+// // javaScript Math
 
-function subscribe() {
-  document.getElementById("text").innerHTML = "Subcribed";
-  document.getElementById("btn").innerHTML = "Subcribed";
-  document.getElementById("btn").style.backgroundColor = "#262626";
-}
-
-function like() {
-  document.getElementById("like").innerHTML =
-    '<i class="fa-solid fa-thumbs-up"></i> liked';
-}
-
-// function keyPress() {
-//   document.getElementById("text").innerHTML = "Key Press";
-// }
-
-// function onLoad() {
-//     alert("Testing JavaScript onLoad")
-//   document.getElementById("text").innerHTML = 'Website Loaded';
-// }
-
-    function checkFields() {
-      const inputs = document.querySelectorAll('#form input[type="text"], #form input[type="email"], #form textarea');
-      let hasValue = false;
-
-      inputs.forEach(input => {
-        if (input.value.trim() !== '') {
-          hasValue = true;
-        }
-      });
-
-      document.getElementById('text').innerHTML = hasValue ? "Key Press" : "";
-    }
-function windowResize() {
-  document.getElementById("textarea").style.height = '100px';
-}
+// let num = 30.00000000000001;
+// let num2= 2;
 
 
-function OnScroll() {
-  document.getElementById("text").innerHTML = 'Scrolling';
-}
+// //If need Roud Number
+// console.log(Math.round(num));
+// console.log(Math.ceil(num));
+// console.log(Math.floor(num));
 
 
-document.getElementById("btn").onclick = function () {
-    document.getElementById("text").innerHTML = 'Subcribed';
-    document.getElementById("btn").innerHTML = 'Subcribed';
-}
+// // Squre Value
+
+// console.log(Math.pow(5, 3));
 
 
-document.getElementById("btn").addEventListener("click", function () {
-    document.getElementById("btn").innerHTML = 'Saddam';
-})
+// // Root Value
+
+// console.log(Math.sqrt(64));
+
+// console.log(Math.abs(-5)); //when need positive value
 
 
-// document.getElementById("ul").addEventListener("click", function (e) {
-//     document.getElementById("btn").innerHTML = 'all ok'
-// },
-// true
-// );
+// console.log(Math.min(1,2,3,4,5,6,7,8,9,0));
+// console.log(Math.max(1,2,3,4,5,6,7,8,9,0));
+
+// console.log(Math.PI);
+
+// console.log(Math.cos(0*Math.PI / 180));
 
 
-document.getElementById("li").addEventListener("click", function (e) {
-    document.getElementById("textarea").innerHTML = 'all done'
+// console.log(Math.random().toFixed(2)*10 +1);
+// console.log(Math.floor(Math.random().toFixed(2)*10 +1));
+
+
+// let upperValue = 6;
+// let lowerValue = 1;
+
+// let resultValue = Math.ceil(Math.random() * upperValue);
+
+// console.log(resultValue);
+
+
+document.getElementById("btn").addEventListener(
+    'click',
+    function () {
+    let randomNumber = Math.floor(Math.random() * 6) +1;
+    let imageSource = 'img/' + randomNumber + '.png';
+    document.getElementById("ludo").src = imageSource;
 },
-true
-);
+)
