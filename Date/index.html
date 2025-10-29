@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript is Fun</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="main-section">
+            <h1 id="title"></h1>
+            <br />
+            <button id="btn">Show Table</button>
+            <br />
+            <div id="date_table" class="fade-target"></div>
+        </div>
+        <div class="section-1">
+            <div class="row-1">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What is JavaScript?
+                        </button>
+                        <div class="faq-answer">
+                            JavaScript is a programming language used to make
+                            web pages interactive.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What is the DOM?</button>
+                        <div class="faq-answer">
+                            DOM stands for Document Object Model — it represents
+                            the structure of a webpage.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How do I learn JavaScript?
+                        </button>
+                        <div class="faq-answer">
+                            Practice projects, read documentation, and build
+                            real-world apps!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-2">
+            <div class="row-2">
+                <h2>Countdown Timer</h2>
+                <input type="date" id="targetDate" />
+                <button id="countBtn">Start Countdown</button>
+                <div id="result"></div>
+            </div>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>

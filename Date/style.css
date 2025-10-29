@@ -1,0 +1,151 @@
+#main-section {
+    font-family: "Times New Roman", Times, serif;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.image {
+    width: 150px;
+    display: inline;
+}
+
+button#btn {
+    padding: 15px 4%;
+    background-color: red;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+button#btn:hover,
+button#btn.active {
+    background-color: #262626;
+}
+
+div#date_table {
+    width: 90%;
+    max-width: 1024px;
+}
+
+div#date_table h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.fade-target {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.fade-target.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+.faq {
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.faq-answer {
+    padding: 10px;
+    background-color: #fafafa;
+    border-left: 3px solid #007bff;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.faq-answer.visible {
+    opacity: 1;
+    max-height: 200px;
+}
+
+.faq-question::after {
+    content: "▼";
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+    transform: rotate(180deg);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+input[type="date"] {
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 48px;
+    font-size: 32px;
+    color: #333;
+    font-weight: 700;
+}
