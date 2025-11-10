@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div id="personInfo"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        .game-output {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 16px;
+            margin-top: 20px;
+            border-radius: 8px;
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            white-space: pre-wrap;
+        }
 
-
-    <script src= app.js> </script>
-</body>
+        .game-output p {
+            background: #ffffff;
+            border-left: 4px solid #007bff;
+            padding: 8px 10px;
+            border-radius: 4px;
+            margin: 8px 0;
+        }
+    </style>
+    <body>
+        <div id="personInfo"></div>
+        <div id="output" class="game-output"></div>
+        <script src="app.js"></script>
+    </body>
 </html>

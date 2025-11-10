@@ -65,16 +65,12 @@ do {
 } while (k < car.length);
 // end of loop examples
 
-
-
-
-
 let cars = [
     { name: "BMW", price: 5500000, available: true },
     { name: "Volvo", price: 4800000, available: false },
     { name: "Audi", price: 6200000, available: true },
     { name: "Toyota", price: 3500000, available: true },
-    { name: "Ford", price: 4000000, available: true},
+    { name: "Ford", price: 4000000, available: true },
 ];
 
 let carContainer = document.getElementById("carList");
