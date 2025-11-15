@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Async vs Defer Visual Demo</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Blocking Script -->
+  <script src="scripts/normal-block.js"></script>
+
+  <!-- Async Script -->
+  <script src="scripts/async-analytics.js" async></script>
+
+  <!-- Defer Scripts -->
+  <script src="scripts/defer-ui.js" defer></script>
+  <script src="scripts/defer-data.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Async vs Defer — Visual Timeline Demo</h1>
+    <p>See below how each script loads and runs in real-time:</p>
+
+    <div class="timeline">
+      <div class="stage">
+        <div class="stage-label">🧱 HTML Parsing</div>
+        <div class="bar"><span id="bar-html"></span></div>
+      </div>
+      <div class="stage">
+        <div class="stage-label">📡 Async Script</div>
+        <div class="bar"><span id="bar-async"></span></div>
+      </div>
+      <div class="stage">
+        <div class="stage-label">🎨 Defer Scripts</div>
+        <div class="bar"><span id="bar-defer"></span></div>
+      </div>
+    </div>
+
+    <div id="log"></div>
+  </div>
+
+  <script>
+    const logDiv = document.getElementById("log");
+    const bars = {
+      html: document.getElementById("bar-html"),
+      async: document.getElementById("bar-async"),
+      defer: document.getElementById("bar-defer"),
+    };
+
+    function logMessage(msg) {
+      const t = new Date().toLocaleTimeString();
+      logDiv.innerHTML += `[${t}] ${msg}\n`;
+      logDiv.scrollTop = logDiv.scrollHeight;
+      console.log(`[${t}] ${msg}`);
+    }
+
+    // Simulate HTML parsing
+    logMessage("✅ HTML parsing started...");
+    bars.html.style.width = "30%";
+    setTimeout(() => {
+      bars.html.style.width = "100%";
+      logMessage("✅ HTML parsing finished.");
+    }, 1500);
+  </script>
+</body>
+</html>

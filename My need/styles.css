@@ -1,0 +1,62 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #0066cc;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline {
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.stage {
+    margin-bottom: 15px;
+}
+
+.stage-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.bar {
+    position: relative;
+    background: #e5e7eb;
+    height: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    transition: width 0.6s ease;
+    border-radius: 8px;
+}
+
+#log {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    height: 180px;
+    overflow-y: auto;
+}
